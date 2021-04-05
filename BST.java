@@ -1,16 +1,11 @@
 import java.util.*;
-
-
-
 public class BST{
-    
-    
     class Node{
         int val;
-        char dup;
         Node left;
         Node right;
-        
+
+        //constructor for Node
         Node(int input){
         val = input;
         }}
