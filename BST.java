@@ -12,7 +12,7 @@ public class BST{
         
 
     Node root;
-    
+    //constructor for tree
     BST(){
         root = null;
     }
@@ -55,7 +55,7 @@ public class BST{
             return root;
             
         }     
-        
+    //dfs recursive methods    
     void inorder(Node root){
         if(root == null){
             return;
@@ -83,7 +83,7 @@ public class BST{
         System.out.print(root.val+", ");
 
     }
-    
+    //bfs non -recursive
     void bfs(){
         Queue<Node> trav  = new LinkedList<>();
         trav.add(root);
@@ -102,6 +102,7 @@ public class BST{
         System.out.println("");
         return;
     }
+    //dfs non recursive pre order
     void dfs(){
         Stack<Node> trav  = new Stack<>();
         trav.push(root);
@@ -122,6 +123,7 @@ public class BST{
         return;
     }
 
+//dfs non recursive inorder
     void dfsin(){
         Stack<Node> trav  = new Stack<>();
         trav.push(root);
@@ -144,7 +146,7 @@ public class BST{
     
     
 
-            public static void main(String[] args){
+    public static void main(String[] args){
         BST app  = new BST();
         app.in(9);
         app.in(3);
